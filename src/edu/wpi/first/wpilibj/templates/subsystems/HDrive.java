@@ -9,6 +9,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.Talon;
+import edu.wpi.first.wpilibj.templates.RobotMap;
 import edu.wpi.first.wpilibj.templates.commands.DriveWithJoystick;
 /**
  *
@@ -22,8 +23,8 @@ public class HDrive extends Subsystem {
     
     public HDrive(){
         SideRails = new RobotDrive(2,4,1,3);
-        Strafe1 = new Talon(5);
-        Strafe2 = new Talon(6);
+        Strafe1 = new Talon(RobotMap.strafe1);
+        Strafe2 = new Talon(RobotMap.strafe2);
     }
     
     public void drive(double yAxis, double Turn, double Strafe){

@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.Victor;
+import edu.wpi.first.wpilibj.templates.RobotMap;
 
 /**
  *
@@ -16,8 +17,8 @@ public class intake extends Subsystem {
     Solenoid outTake;
     Victor roller;
     public intake(){
-        intake = new Solenoid(5);
-        outTake = new Solenoid(6);
+        intake = new Solenoid(RobotMap.mod2, RobotMap.intake);
+        outTake = new Solenoid(RobotMap.mod2, RobotMap.outTake);
         roller = new Victor(7);
         
     }

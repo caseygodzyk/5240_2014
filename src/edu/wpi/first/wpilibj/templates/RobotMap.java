@@ -19,7 +19,23 @@ public class RobotMap {
     
     public static final int strafe1 = 5;
     public static final int strafe2 = 6;
-
+    public static final  int shoot1 = 1;
+    public static final int shoot2 = 2;
+    public static final int shoot3 = 3;
+    public static final int shoot4 = 4;
+    public static final int deshoot1 = 5;
+    public static final int deshoot2 = 6;
+    public static final int deshoot3 = 7;
+    public static final int deshoot4 = 8;
     
+    public static final int mod1 = 3;  //solenoid module numbers
+    public static final int mod2 = 4;
+    
+    public static final int intake = 1;
+    public static final int outTake = 2;
+    public static final int roller = 7;
+
+    public static final int wing = 3;
+    public static final int shell = 4;
 
 }

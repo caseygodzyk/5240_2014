@@ -3,6 +3,7 @@ package edu.wpi.first.wpilibj.templates.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.Solenoid;
+import edu.wpi.first.wpilibj.templates.RobotMap;
 
 /**
  *
@@ -15,8 +16,8 @@ public class Wings extends Subsystem {
     Solenoid shell;
     
     public Wings(){
-        catcher = new Solenoid(9);
-        shell = new Solenoid(10);
+        catcher = new Solenoid(RobotMap.mod2, RobotMap.wing);
+        shell = new Solenoid(RobotMap.mod2, RobotMap.shell);
         }
     public void caught(){
         catcher.set(true);

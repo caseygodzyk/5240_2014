@@ -4,6 +4,7 @@ package edu.wpi.first.wpilibj.templates.subsystems;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.Solenoid;
+import edu.wpi.first.wpilibj.templates.RobotMap;
 
 
 /**
@@ -15,14 +16,14 @@ public class launcher extends Subsystem {
     Solenoid shoot1, shoot2, shoot3, shoot4, unshoot, deshoot, nshoot, noshoot;
     
     public launcher(){
-        shoot1 = new Solenoid(1);
-        shoot2= new Solenoid(3);
-        shoot3 = new Solenoid(5);
-        shoot4 = new Solenoid(7);
-        unshoot = new Solenoid(2);
-        deshoot = new Solenoid(4);
-        nshoot = new Solenoid(6);
-        noshoot= new Solenoid(8);
+        shoot1 = new Solenoid(RobotMap.mod1, RobotMap.shoot1);
+        shoot2= new Solenoid(RobotMap.mod1, RobotMap.shoot2);
+        shoot3 = new Solenoid(RobotMap.mod1, RobotMap.shoot3);
+        shoot4 = new Solenoid(RobotMap.mod1, RobotMap.shoot4);
+        unshoot = new Solenoid(RobotMap.mod1, RobotMap.deshoot1);
+        deshoot = new Solenoid(RobotMap.mod1, RobotMap.deshoot2);
+        nshoot = new Solenoid(RobotMap.mod1, RobotMap.deshoot3);
+        noshoot= new Solenoid(RobotMap.mod1, RobotMap.deshoot4);
     }
     public void shoot(){
         shoot1.set(true);
