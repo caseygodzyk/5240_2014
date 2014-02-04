@@ -48,7 +48,9 @@ public class OI {
     public boolean GetButton(){
         return gamepad.getRawButton(1);
     }
-    
+      public boolean GetWingButton(){
+        return gamepad.getRawButton(2);
+    }  
     public double GetSpeed(){
         return Drive.getRawAxis(2);
     }

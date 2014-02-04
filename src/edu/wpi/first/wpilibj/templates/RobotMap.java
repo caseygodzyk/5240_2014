@@ -17,5 +17,9 @@ public class RobotMap {
     // public static final int rangefinderPort = 1;
     // public static final int rangefinderModule = 1;
     
-    public static final int rightFront = 2;
+    public static final int strafe1 = 5;
+    public static final int strafe2 = 6;
+
+    
+
 }

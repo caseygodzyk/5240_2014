@@ -7,6 +7,7 @@ import edu.wpi.first.wpilibj.templates.subsystems.ExampleSubsystem;
 import edu.wpi.first.wpilibj.templates.subsystems.HDrive;
 import edu.wpi.first.wpilibj.templates.subsystems.intake;
 import edu.wpi.first.wpilibj.templates.subsystems.launcher;
+import edu.wpi.first.wpilibj.templates.subsystems.Wings;
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.
@@ -22,6 +23,7 @@ public abstract class CommandBase extends Command {
     public static HDrive drivetrain = new HDrive();
     public static intake intake = new intake();
     public static launcher launch = new launcher();
+    public static Wings wings = new Wings();
     
 
     public static void init() {
@@ -37,6 +39,7 @@ public abstract class CommandBase extends Command {
         SmartDashboard.putData(drivetrain);
         SmartDashboard.putData(intake);
         SmartDashboard.putData(launch);
+        SmartDashboard.putData(wings);
     }
 
     public CommandBase(String name) {
