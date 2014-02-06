@@ -5,12 +5,14 @@ package edu.wpi.first.wpilibj.templates.commands;
  *
  * @author Casey
  */
-public class ExampleCommand extends CommandBase {
+public class auto extends CommandBase {
 
-    public ExampleCommand() {
+    public auto() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
      //   addSequential(new launchButton());
+        requires(wings);
+        requires(launch);
     }
 
     // Called just before this Command runs the first time
@@ -19,7 +21,8 @@ public class ExampleCommand extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-           
+           wings.caught();
+           launch.shoot();
  
 
     }
